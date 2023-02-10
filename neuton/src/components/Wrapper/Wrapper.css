@@ -1,0 +1,20 @@
+.wrapper{
+    padding: 20px;   
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 50%;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #fd6bff 100%);
+    
+}
+
+.wrapper-inner{
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    /* background-image: url('../Assets/BG.svg'); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
