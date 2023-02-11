@@ -18,3 +18,11 @@
     overflow: hidden;
 
 }
+
+.middlecontent{
+    display: flex;
+    flex-direction: column;
+    margin-left : 50px;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
