@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import Left from  "../Left/Left"
 const mainfunc = document.querySelector(".Main-div");
+
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
@@ -22,34 +23,37 @@ const basicStyle = {
 
 function App() {
   const [frontcount,setFrontcount] = useState(0);
-const [backcount,setBackcount] = useState(0);
+  const [backcount,setBackcount] = useState(0);
   // const[data,setdata] =useState("helllllo")
   function scroll(wheel, elem) {
     console.log(wheel.deltaY);
 
     if (wheel.deltaY >= 90) {
       // console.log(wheel.deltaY)
-      if (frontcount == 10) {
-        // document.querySelector(".one").style.display = "none";
-        // document.querySelector(".two").style.display = "block";
-        // frontcount = 0;
+      if (frontcount == 50) {
+        setFrontcount(0)
+        setBackcount(0)
+
+        console.log("Front");
+
       } else {
         setFrontcount(frontcount + 5)
-        setBackcount(backcount - 5)
       }
     }
     
     else if (wheel.deltaY <= 90) {
       console.log("backcount is :", backcount);
-      if (backcount == -10) {
+      if (backcount == -50) {
         // document.querySelector(".two").style.display = "none";
         // document.querySelector(".one").style.display = "block";
-        console.log("BACKwork");
+        setFrontcount(0)
+        setBackcount(0)
 
+        console.log("Back");
+        
         // backcount = 0;
       } else {
-        setFrontcount(frontcount - 5)
-        setBackcount(backcount + 5) ;
+        setBackcount(backcount - 5);
       }
     }
 

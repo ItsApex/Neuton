@@ -1,0 +1,19 @@
+.Main-Text{
+    display: flex;
+    float: left;
+    height: 60vh;
+    width: 40vw;
+    /* height: 100%; */
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.middlecontent{
+    font-size: 30px;
+    
+}
+
+.downcontent{
+   margin-top : 130px;
+}
