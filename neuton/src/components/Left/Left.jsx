@@ -1,59 +1,74 @@
 import "./left.css";
 import styled from "styled-components";
-import React from "react";
+import React,{ useEffect } from "react";
 import Fade from "react-reveal/Fade";
-
+import Details from "../Details/Details";
 // import React from "react";
 var flgscl = 0   
 
 function Left(props) {
-  console.log("back", props.back , "front", props.front)
+  // console.log("back", props.back , "front", props.front)
     const basicStyle = {
         display: "none",
       };
 
+// console.log(flgscl , "flagSCL")
 
+useEffect(() => {
 
-if(flgscl == 0 ){
-  console.log("1st called")
-  if(props.front == 10){
-    document.querySelector(".one").style.display = "none";
-    document.querySelector(".two").style.display = "block";
-    flgscl = 10
- }
-
-} 
-
-else if (flgscl == 10){
-  console.log("2nd called")
- 
-
-  if(props.front == 10){
+  if(flgscl == 0 ){
+    // console.log("1st called")
+    if(props.front == 10){
+      document.querySelector(".one").style.display = "none";
+      document.querySelector(".two").style.display = "block";
+      flgscl = 10
+      // console.log("1st PROS FRONT = 10 called ")
+   }
+  } 
+  
+  else if (flgscl == 10){
+    // console.log("2nd called")
+   
+  
+    if(props.front == 10){
+      document.querySelector(".two").style.display = "none";
+      document.querySelector(".three").style.display = "block";
+      flgscl = 20
+    // console.log("2nd PROS FRONT = 10 called ")
+      
+   }
+    
+   else if(props.back == -10){
     document.querySelector(".two").style.display = "none";
-    document.querySelector(".three").style.display = "block";
-    flgscl = 20
- }
+    document.querySelector(".one").style.display = "block";
+    flgscl = 0
+    // console.log("2nd PROS FRONT = -10 called ")
+    
+    }
   
- else if(props.back == -10){
-  document.querySelector(".two").style.display = "none";
-  document.querySelector(".one").style.display = "block";
-  flgscl = 0 
+    // else if(props.front == 10 ){
+    //   document.querySelector(".two").style.display = "none";
+    //   document.querySelector(".three").style.display = "block";
+     
+    // }
+  }
   
+  
+  else if (flgscl == 20){
+    // console.log("3rd called")
+  
+  
+   if(props.back == -10){
+    document.querySelector(".two").style.display = "block";
+    document.querySelector(".three").style.display = "none";
+    flgscl = 10
+   }
+  // console.log(props.front)
   }
-}
+  
 
 
-else if (flgscl == 20){
-  console.log("3rd called")
-
-
- if(props.back == -10){
-  document.querySelector(".two").style.display = "block";
-  document.querySelector(".three").style.display = "none";
-  flgscl = 10
-
-  }
-}
+},[props.back , props.front])
 
 
 
@@ -64,7 +79,7 @@ else if (flgscl == 20){
       <div className="Main-Text ">
 
 
-      <div className='one'>
+      <div className='one' >
         <Fade left>
           <div className="middlecontent">
             <div className="big">Centralized Apps</div>
@@ -87,13 +102,18 @@ else if (flgscl == 20){
       <div className='three' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
-            <div className="big"> Third Centralized Apps</div>
-            <div className="small">Third content</div>
+            <div className="big"> Web Solution</div>
+            <div className="small"> 03 Managing Asset</div>
           </div>
         </Fade>
       </div>
 
+      
       </div>
+
+    
+
+     
     </>
   );
 }

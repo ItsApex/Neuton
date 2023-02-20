@@ -1,0 +1,12 @@
+.bottom-section{
+    display: flex;
+    justify-content: center;
+}
+
+.boxes{
+    border: 2px solid orange;
+    padding : 10px;
+    border-radius: 10px;
+    margin : 10px;
+    cursor : pointer
+}

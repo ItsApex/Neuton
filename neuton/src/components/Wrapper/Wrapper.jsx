@@ -2,16 +2,19 @@
 import "./Wrapper.css";
 import styled from "styled-components";
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import Left from  "../Left/Left"
+import Middle from "../Middle/middle"
+import Bottom from "../bottom/Bottom";
+import Details from "../Details/Details";
 const mainfunc = document.querySelector(".Main-div");
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-  height: 150em;
-`;
+// const Title = styled.h1`
+//   font-size: 1.5em;
+//   text-align: center;
+//   color: palevioletred;
+//   height: 150em;
+// `;
 
 const basicStyle = {
   display: "none",
@@ -25,27 +28,23 @@ function App() {
   const [frontcount,setFrontcount] = useState(0);
   const [backcount,setBackcount] = useState(0);
   // const[data,setdata] =useState("helllllo")
-  function scroll(wheel, elem) {
-    console.log(wheel.deltaY);
+  function scroll(wheel) {
+    console.log("wheel value is",wheel.deltaY);
 
     if (wheel.deltaY >= 90) {
       // console.log(wheel.deltaY)
-      if (frontcount == 50) {
+      if (frontcount == 30) {     //small changes made here..change to 30
         setFrontcount(0)
         setBackcount(0)
-
         console.log("Front");
-
       } else {
         setFrontcount(frontcount + 5)
       }
     }
     
     else if (wheel.deltaY <= 90) {
-      console.log("backcount is :", backcount);
-      if (backcount == -50) {
-        // document.querySelector(".two").style.display = "none";
-        // document.querySelector(".one").style.display = "block";
+      if (backcount == -30) {
+
         setFrontcount(0)
         setBackcount(0)
 
@@ -57,6 +56,15 @@ function App() {
       }
     }
 
+
+    // yaha pe changes kiye hei...just change the value 30 in line 62 to 25 
+    // console.log("frontcount value for checking details page is ",frontcount)
+    if(frontcount  >30){
+      console.log("details page show hona chaiye")
+      document.querySelector(".threepages").style.display = "none";
+      document.querySelector(".detailspage").style.display = "block";
+    }
+
     // console.log(wheel.deltax)
   }
 
@@ -66,14 +74,54 @@ function App() {
 
   return (
     <div className="wrapper">
+      
       <div className="wrapper-inner">
 
         {/* my code */}
 
-        <div  >
+        <div className="header-section">
+          <div className="header">
+          foton.
+          </div>
+        
+
+        {/* <div className="menuicon" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)"><path d="M0 6h18M0 0h18M0 12h18"/></g></svg>
+        </div> */}
+        </div>
+
+       
+
+{/* middle section */}
+<div className="threepages">
+        <div className="middle-section">
+
+       
         <Left front={frontcount} back={backcount}/>
+     
+
+       <div className="MiddleContent"  >
+        <Middle front={frontcount} back={backcount}/>
        </div>
 
+       <div className="thirdmiddlecontent"></div>
+
+       </div>
+
+       {/* bottom section */}
+
+      
+       <div className="bottom">
+        <Bottom/>
+       </div>
+       </div>
+
+        <div className="detailspage" style={basicStyle}>
+          <Details/>
+        </div>
+
+
+      
         {/* <div className="one" style={basicStyle}>
           <Fade left>
             <div className="middlecontent">

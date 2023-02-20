@@ -16,13 +16,61 @@
     background-size:cover;
     background-repeat: no-repeat;
     overflow: hidden;
-
-}
-
-.middlecontent{
     display: flex;
     flex-direction: column;
-    margin-left : 50px;
-    /* text-align: center; */
-    /* justify-content: center; */
+    background-color: #ffe6cc;
+
 }
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.header{
+    font-weight: 400;
+    font-size: 40px;
+   
+    justify-content: flex-start;
+    margin : 20px;
+}
+
+.menuicon{
+border: 1px solid blue;
+height : 50px;
+margin-top: 20px;
+}
+
+
+
+
+.MiddleContent{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* display: ; */
+    height : 350px;
+    width : 33.3%;
+    margin :auto;
+    /* margin-left: 68px; */
+    /* background-color: red; */
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdmiddlecontent{
+    width : 33.3%;
+}
+
+/* 
+@media  screen and (max-width : 600px) {
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    
+    
+
