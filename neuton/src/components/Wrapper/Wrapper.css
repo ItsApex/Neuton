@@ -50,8 +50,12 @@ margin-top: 20px;
     /* justify-content: center; */
     /* display: ; */
     height : 350px;
-    width : 33.3%;
-    margin :auto;
+    /* width : 33.3%; */
+    /* margin :auto; */
+    position: absolute;
+    left: 50%;
+    right : 50%;
+    /* z-index : 2 */
     /* margin-left: 68px; */
     /* background-color: red; */
 }
@@ -62,7 +66,7 @@ margin-top: 20px;
 }
 
 .thirdmiddlecontent{
-    width : 33.3%;
+    /* width : 33.3%; */
 }
 
 /* 

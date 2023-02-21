@@ -67,9 +67,9 @@ function Phone(props) {
   },[props.back , props.front])
 
   return (
-    <div className="phone">
+    <div className="phone" style={{overflow: "hidden"}}>
     
-      <div className="outercontainer">  
+      {/* <div className="outercontainer">   */}
       <div className='first'> 
        <Fade left>
           <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-1.png"/> 
@@ -88,7 +88,7 @@ function Phone(props) {
       </Fade>
       </div>
 
-      </div>
+      {/* </div> */}
    
     </div>
   )

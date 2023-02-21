@@ -97,10 +97,10 @@ function App() {
         <div className="middle-section">
 
        
-        <Left front={frontcount} back={backcount}/>
-     
+        <Left  front={frontcount} back={backcount}/>
+          
 
-       <div className="MiddleContent"  >
+       <div className="MiddleContent">
         <Middle front={frontcount} back={backcount}/>
        </div>
 

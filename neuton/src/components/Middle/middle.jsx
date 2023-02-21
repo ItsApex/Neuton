@@ -1,5 +1,5 @@
 import "./middle.css";
-
+import Phone from "../phone/phone";
 import React,{ useEffect } from "react";
 import Fade from "react-reveal/Fade";
 
@@ -68,27 +68,30 @@ function Middle(props) {
 
   return (
     <div className="phone">
-    
-      <div className="outercontainer">  
-      <div className='first'> 
-       <Fade left>
+   
+      <div className="outercontainer">   
+      {/* <div className='first'> 
+       <Fade bottom>
           <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-1.png"/> 
       </Fade>
       </div> 
 
       <div className='second' style={basicStyle}>
-        <Fade left> 
+        <Fade bottom> 
         <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-2.png"/>  
         </Fade> 
         </div>
 
       <div className='third' style={basicStyle}>
-      <Fade left> 
+      <Fade right> 
          <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-3.png"/> 
       </Fade>
+      </div> */}
+      <Phone/>
       </div>
-
-      </div>
+      
+     
+    
    
     </div>
   )
