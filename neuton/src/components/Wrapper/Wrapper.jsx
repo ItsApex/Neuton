@@ -1,4 +1,7 @@
 // import './App.css';
+import { motion, useAnimation } from "framer-motion" ;
+import { useRef,useEffect } from 'react';
+import Element from "../Assets/Elementsvg.svg"
 import "./Wrapper.css";
 import styled from "styled-components";
 import React, { useState } from "react";
@@ -7,24 +10,59 @@ import Left from  "../Left/Left"
 import Middle from "../Middle/middle"
 import Bottom from "../bottom/Bottom";
 import Details from "../Details/Details";
+import Elementsvg from "../Element/Element"
+
 const mainfunc = document.querySelector(".Main-div");
-
-// const Title = styled.h1`
-//   font-size: 1.5em;
-//   text-align: center;
-//   color: palevioletred;
-//   height: 150em;
-// `;
-
 const basicStyle = {
   display: "none",
-  // transition: "All 2s",
+
 };
 
-// var frontcount = 0;
-// var backcount = 0;
+
 
 function App() {
+  // animation vaala part
+  // const animation = useAnimation();
+  //   const [scrollY, setScrollY] = useState(0);
+  //   const wrapperInnerRef = useRef(null);
+  
+
+  //   useEffect(() => {
+  //       function handleScroll() {
+  //           setScrollY(wrapperInnerRef.current.scrollTop);
+  //       }
+  //       wrapperInnerRef.current.addEventListener("scroll", handleScroll);
+  //       return () => {
+  //           wrapperInnerRef.current.removeEventListener("scroll", handleScroll);
+  //       };
+  //   }, []);
+  //   useEffect(() => {
+        
+  //       animation.start({
+  //           rotate:scrollY,
+  //       });
+  //   }, [scrollY]);
+// animation khatam
+
+    // Animation vaala part
+    const [isRotated, setIsRotated] = useState(false);
+    const [isBottom, setIsBottom] = useState(false);
+    
+    useEffect(() => {
+      const handleWheel = (event) => {
+        setIsRotated(!isRotated);
+        setIsBottom(!isBottom);
+      };
+    
+      window.addEventListener('wheel', handleWheel);
+    
+      return () => {
+        window.removeEventListener('wheel', handleWheel);
+      };
+    }, [isRotated, isBottom]);
+    // Animation vaala part khatam
+
+
   const [frontcount,setFrontcount] = useState(0);
   const [backcount,setBackcount] = useState(0);
   // const[data,setdata] =useState("helllllo")
@@ -59,7 +97,7 @@ function App() {
 
     // yaha pe changes kiye hei...just change the value 30 in line 62 to 25 
     // console.log("frontcount value for checking details page is ",frontcount)
-    if(frontcount  >30){
+    if(frontcount  > 30){
       console.log("details page show hona chaiye")
       document.querySelector(".threepages").style.display = "none";
       document.querySelector(".detailspage").style.display = "block";
@@ -78,16 +116,35 @@ function App() {
       <div className="wrapper-inner">
 
         {/* my code */}
+        {/* <img className="elementSvg" src={Element} /> */}
+        {/* <motion.img style={{ originX: 0.5 , originY : 0.8 }} className='moving-image' animate={animation} src={Element} /> */}
+        {/* <motion.img style={{ originX: 0.5 , originY : 0.8 }} className='moving-image' src={Element} /> */}
 
+
+{/* Image vaala code hei  */}
+     {/* <img className="rotatingSvg" src={Element} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style={{
+     transform: isRotated ? 'rotate(180deg)' : 'none',
+     transition: 'transform 0.5s ease-out, top 0.5s ease-out',
+     position: 'absolute',
+     top: isBottom ? 'auto' : '20px',
+     bottom: isBottom ? '20px' : 'auto',
+     maxWidth: 'calc(100% - 3%)' 
+    }}/> */}
+    <div className="element">
+    <Elementsvg front={frontcount} back={backcount}/>
+    </div>
+    
+  
         <div className="header-section">
           <div className="header">
           foton.
           </div>
         
-
-        {/* <div className="menuicon" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)"><path d="M0 6h18M0 0h18M0 12h18"/></g></svg>
-        </div> */}
+         
+        <div className="menuicon" >
+        <svg  xmlns="http://www.w3.org/2000/svg"   width="20" height="14" viewBox="0 0 20 14"><g fill="red" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)"><path d="M0 6h18M0 0h18M0 12h18"/></g></svg>
+        {/* <img src={menuicon} className="svgicon" alt="menubar"/> */}
+        </div>
         </div>
 
        
@@ -119,51 +176,6 @@ function App() {
         <div className="detailspage" style={basicStyle}>
           <Details/>
         </div>
-
-
-      
-        {/* <div className="one" style={basicStyle}>
-          <Fade left>
-            <div className="middlecontent">
-              <div className="big">Centralized Apps</div>
-              <div className="small">First content</div>
-            </div>
-          </Fade>
-        </div> */}
-
-        {/* <div className='one' style={basicStyle}>
-          <Fade left> ONE </Fade>
-          </div>
-        <div div className='two' style={basicStyle}>
-        <Fade left> TWO </Fade>
-           </div>
-        <div className='three'> THREE </div> */}
-
-       
-
-        {/* <div className='two' style={basicStyle}>
-          <Fade/>
-         </div> */}
-        {/* <div className='three'> THREE </div> */}
-
-        {/* <div className='one' style={basicStyle}>
-        <Fade left>
-          <div className="middlecontent">
-            <div className="big">Centralized Apps</div>
-            <div className="small">First content</div>
-          </div>
-        </Fade>
-      </div>
-
-      <div className='two' style={basicStyle}>
-        <Fade left>
-          <div className="middlecontent">
-            <div className="big"> second Centralized Apps</div>
-            <div className="small">Second content</div>
-          </div>
-        </Fade>
-      </div> */}
-
       </div>
     </div>
   );

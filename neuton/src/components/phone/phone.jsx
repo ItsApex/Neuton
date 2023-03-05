@@ -2,7 +2,12 @@ import "./phone.css";
 
 import React,{ useEffect } from "react";
 import Fade from "react-reveal/Fade";
-
+//images import
+import Home from '../Assets/Home.png';
+import Investment from '../Assets/Quickcash.png';
+import Quickcash from '../Assets/Quickcash.png';
+import Coupons from '../Assets/Coupons.png';
+import Tos from '../Assets/TOS.png';
 
 var flgscl = 0  
 function Phone(props) {
@@ -72,19 +77,31 @@ function Phone(props) {
       {/* <div className="outercontainer">   */}
       <div className='first'> 
        <Fade left>
-          <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-1.png"/> 
+          <img className="svg"  src={Home}/> 
       </Fade>
       </div> 
 
       <div className='second' style={basicStyle}>
         <Fade left> 
-        <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-2.png"/>  
+        <img className="svg"  src={Investment}/>  
         </Fade> 
         </div>
 
       <div className='third' style={basicStyle}>
       <Fade left> 
-         <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-3.png"/> 
+         <img className="svg"  src={Quickcash} /> 
+      </Fade>
+      </div>
+
+      <div className='four' style={basicStyle}>
+      <Fade left> 
+         <img className="svg"  src={Coupons} /> 
+      </Fade>
+      </div>
+
+      <div className='five' style={basicStyle}>
+      <Fade left> 
+         <img className="svg"  src={Tos} /> 
       </Fade>
       </div>
 

@@ -84,7 +84,7 @@ useEffect(() => {
           <div className="middlecontent">
             <div className="big">Centralized Apps</div>
             <div className="small">First content</div>
-            <div className="downcontent">Protecting the Data</div>
+            <div className="downcontent"> 01 Protecting the Data</div>
           </div>
         </Fade>
       </div>
@@ -94,7 +94,7 @@ useEffect(() => {
           <div className="middlecontent">
             <div className="big"> Top Notch Features</div>
             <div className="small">Second content</div>
-            <div className="downcontent">Market Analysis</div>
+            <div className="downcontent"> 02 Market Analysis</div>
           </div>
         </Fade>
       </div>
@@ -104,6 +104,24 @@ useEffect(() => {
           <div className="middlecontent">
             <div className="big"> Web Solution</div>
             <div className="small"> 03 Managing Asset</div>
+          </div>
+        </Fade>
+      </div>
+
+      <div className='four' style={basicStyle}>
+        <Fade left>
+          <div className="middlecontent">
+            <div className="big"> Coupons</div>
+            <div className="small"> 04 Get Exciting coupons </div>
+          </div>
+        </Fade>
+      </div>
+
+      <div className='five' style={basicStyle}>
+        <Fade left>
+          <div className="middlecontent">
+            <div className="big">TOS</div>
+            <div className="small"> 05 End of the display </div>
           </div>
         </Fade>
       </div>
