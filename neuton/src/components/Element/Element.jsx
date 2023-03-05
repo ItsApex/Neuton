@@ -3,8 +3,9 @@ import React,{ useEffect,useState } from "react";
 import Fade from "react-reveal/Fade";
 import styled from "styled-components";
 //Element import
-import Element from "../Assets/Elementsvg.svg"
-
+import Element from "../Assets/Elementsvg.svg";
+import { motion } from "framer-motion";
+//  <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />
 
 var flgscl = 0  
 function Phone(props) {
@@ -93,12 +94,7 @@ useEffect(() => {
   return (
     <div className="deemag">
      <img className="rotatingSvg" src={Element} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style={{
-    //  transform: isRotated ? 'rotate(180deg)' : 'none',
-     transition: 'transform 5s',
-     transition: 'transform 0.5s ease-out, top 0.5s ease-out',
-     position: 'absolute',
-     top: isBottom ? 'auto' : '0px',
-     bottom: isBottom ? '-600px' : 'auto', 
+     position : 'absolute',
     //  maxWidth : '120%';
      maxWidth: 'calc(100% + 100%)' ,
     }}/>
