@@ -1,12 +1,10 @@
-.deemag{
-    /* height : 200%; */
+.element{
+    position : absolute;
+        bottom: 0;
+    /* transform: rotate(180deg);  */
+    /* height : 20%; */
     width : 100%;
-    position: relative;
-    top : 0px;
-    left : -50%;
     transform-origin: center;
-    /* top : 40%; */
-    /* transition: transform 5s; */
-    /* top : -10%; */
-}
+    transition-duration: 1s;
 
+}

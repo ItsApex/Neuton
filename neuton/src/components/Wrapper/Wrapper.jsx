@@ -67,14 +67,14 @@ function App() {
   const [backcount,setBackcount] = useState(0);
   // const[data,setdata] =useState("helllllo")
   function scroll(wheel) {
-    console.log("wheel value is",wheel.deltaY);
+    // console.log("wheel value is",wheel.deltaY);
 
     if (wheel.deltaY >= 90) {
       // console.log(wheel.deltaY)
       if (frontcount == 30) {     //small changes made here..change to 30
         setFrontcount(0)
         setBackcount(0)
-        console.log("Front");
+        // console.log("Front");
       } else {
         setFrontcount(frontcount + 5)
       }
@@ -86,7 +86,7 @@ function App() {
         setFrontcount(0)
         setBackcount(0)
 
-        console.log("Back");
+        // console.log("Back");
         
         // backcount = 0;
       } else {
@@ -130,10 +130,14 @@ function App() {
      bottom: isBottom ? '20px' : 'auto',
      maxWidth: 'calc(100% - 3%)' 
     }}/> */}
-    <div className="element">
-    <Elementsvg front={frontcount} back={backcount}/>
-    </div>
+    {/* <div className="element"> */}
+    {/* <Elementsvg front={frontcount} back={backcount}/> */}
+    {/* </div> */}
     
+
+   <Elementsvg   front={frontcount} back={backcount} />
+
+
   
         <div className="header-section">
           <div className="header">
@@ -142,7 +146,7 @@ function App() {
         
          
         <div className="menuicon" >
-        <svg  xmlns="http://www.w3.org/2000/svg"   width="20" height="14" viewBox="0 0 20 14"><g fill="red" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)"><path d="M0 6h18M0 0h18M0 12h18"/></g></svg>
+        <svg  xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 20 14"><g fill="red" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1 1)"><path d="M0 6h18M0 0h18M0 12h18"/></g></svg>
         {/* <img src={menuicon} className="svgicon" alt="menubar"/> */}
         </div>
         </div>
@@ -153,7 +157,7 @@ function App() {
 <div className="threepages">
         <div className="middle-section">
 
-       
+  
         <Left  front={frontcount} back={backcount}/>
           
 
