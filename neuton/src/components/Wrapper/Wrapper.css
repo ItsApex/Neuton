@@ -25,6 +25,7 @@ width : 100%;
 
 .wrapper-inner{
     position: relative;
+    z-index: 1;
     height: 100%;
     border-radius: 10px;
     text-align: center;
@@ -96,7 +97,10 @@ svg {
     flex-direction: row;
 }
 
-
+.elementsvg{
+    position: absolute;
+    z-index: 0;
+}
 
 /* 
 @media  screen and (max-width : 600px) {

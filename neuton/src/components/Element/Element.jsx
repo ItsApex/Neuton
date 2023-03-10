@@ -40,7 +40,9 @@ function BackEle(props) {
     
       if(props.front == 10){
         document.querySelector(".element").style.position ="absolute"
-        document.querySelector(".element").style.top = "180px"
+        document.querySelector(".element").style.top= "28%"
+       
+
         document.querySelector(".element").style.transform = "rotate(360deg)"
         // document.querySelector(".second").style.display = "none";
         // document.querySelector(".third").style.display = "block";
@@ -51,10 +53,10 @@ function BackEle(props) {
      }
       
      else if(props.back == -10){
-      document.querySelector(".second").style.display = "none";
-      document.querySelector(".first").style.display = "block";
-      document.querySelector(".element").style.top = "180px"
-      document.querySelector(".element").style.transform = "rotate(-180deg)"
+      // document.querySelector(".second").style.display = "none";
+      // document.querySelector(".first").style.display = "block";
+      document.querySelector(".element").style.top = "28%"
+      document.querySelector(".element").style.transform = "rotate(0deg)"
       flgscl = 0
       console.log("1st for svg")
       }
@@ -72,8 +74,8 @@ function BackEle(props) {
     
      if(props.back == -10){
       console.log("2nd for svg")
-      document.querySelector(".element").style.top = "0px"
-      document.querySelector(".element").style.transform = "rotate(540deg)"
+      document.querySelector(".element").style.top = "0"
+      document.querySelector(".element").style.transform = "rotate(180deg)"
       // document.querySelector(".second").style.display = "block";
       // document.querySelector(".third").style.display = "none";
       flgscl = 10
