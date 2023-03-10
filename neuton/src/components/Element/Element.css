@@ -5,7 +5,7 @@
     /* bottom: 0; */
     width : 100%;
     transform-origin: 50% 98%;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function:cubic-bezier(0.99999, 0.2, 0.165,1);
 }
 

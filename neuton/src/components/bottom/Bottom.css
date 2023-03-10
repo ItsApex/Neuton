@@ -1,12 +1,25 @@
 .bottom-section{
     display: flex;
+    font-family: 'Inter';
     justify-content: center;
+    text-align: center;
+    font-weight: bolder;
 }
 
-.boxes{
-    border: 2px solid orange;
+.boxes{    
+    border: 2px solid rgba(240, 159, 8, 0);
     padding : 10px;
     border-radius: 10px;
+    text-align: center;
+    align-items: center;
     margin : 10px;
-    cursor : pointer
+    cursor : pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    height : 20px;
+    width : 20px;
+    margin : 1px;
 }

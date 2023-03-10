@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header(params) {
     <div className="header-section">
-    <div className="header">
+    <div className="header" style={{color:'white'}}>
         foton.
     </div>
   

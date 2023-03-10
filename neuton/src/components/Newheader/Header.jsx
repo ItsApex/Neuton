@@ -4,12 +4,12 @@ function Header() {
   return (
     <div>
          <div className="header-section">
-          <div className="header">foton.</div>
-
+          <div className="header" style={{color:'white'}}>GigaDes.</div>
+    
           <div className="menuicon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14"  fill="red">
               <g
-                fill="red"
+               
                 fill-rule="evenodd"
                 stroke="#000"
                 stroke-linecap="round"

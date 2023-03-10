@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "framer-motion": "^10.0.2",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "webfontloader": "^1.6.28"
   }
 }

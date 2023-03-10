@@ -19,8 +19,9 @@ useEffect(() => {
   if(flgscl == 0 ){
     // console.log("1st called")
     if(props.front == 10){
-      document.querySelector(".one").style.display = "none";
       document.querySelector(".two").style.display = "block";
+      document.querySelector(".one").style.display = "none";
+      
       flgscl = 10
       // console.log("1st PROS FRONT = 10 called ")
    }
