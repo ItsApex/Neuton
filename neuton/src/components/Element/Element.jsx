@@ -24,10 +24,11 @@ function BackEle(props) {
         console.log("2nd for svg")
         
         document.querySelector(".element").style.position ="absolute"
-        document.querySelector(".element").style.bottom = "10"
-        document.querySelector(".element").style.removeProperty('top')
+        // document.querySelector(".element").style.bottom = "400"
+        // document.querySelector(".element").style.removeProperty('top')
 
         document.querySelector(".element").style.transform = "rotate(180deg)"
+        // document.querySelector(".element").style.transformOrigin = "50% 100%" 
        
         // document.querySelector(".first").style.display = "none";
         // document.querySelector(".second").style.display = "block";
@@ -42,8 +43,8 @@ function BackEle(props) {
     
       if(props.front == 10){
         document.querySelector(".element").style.position ="absolute"
-        document.querySelector(".element").style.top= "10"
-        document.querySelector(".element").style.removeProperty('bottom')
+        // document.querySelector(".element").style.top= "0"
+        // document.querySelector(".element").style.removeProperty('bottom')
 
        
 
@@ -59,8 +60,8 @@ function BackEle(props) {
      else if(props.back == -10){
       // document.querySelector(".second").style.display = "none";
       // document.querySelector(".first").style.display = "block";
-      document.querySelector(".element").style.top = "10"
-      document.querySelector(".element").style.removeProperty('bottom')
+      // document.querySelector(".element").style.top = "0"
+      // document.querySelector(".element").style.removeProperty('bottom')
 
 
       document.querySelector(".element").style.transform = "rotate(0deg)"
@@ -81,9 +82,9 @@ function BackEle(props) {
     
      if(props.back == -10){
       console.log("2nd again for svg")
-        document.querySelector(".element").style.removeProperty('top')
+        // document.querySelector(".element").style.removeProperty('top')
 
-        document.querySelector(".element").style.bottom = "0"
+        // document.querySelector(".element").style.bottom = "0"
       document.querySelector(".element").style.transform = "rotate(180deg)"
       // document.querySelector(".second").style.display = "block";
       // document.querySelector(".third").style.display = "none";
