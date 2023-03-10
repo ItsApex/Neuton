@@ -11,6 +11,10 @@ import Middle from "../Middle/middle";
 import Bottom from "../bottom/Bottom";           
 import Details from "../Details/Details";
 import Elementsvg from "../Element/Element";
+// new
+import Header from "../Newheader/Header";
+import Newmiddle from "../Newmiddle/Newmiddle";
+
 
 const mainfunc = document.querySelector(".Main-div");
 const basicStyle = {
@@ -84,50 +88,10 @@ function App() {
       <div className="wrapper-inner">
         {/* my code */}
         <Elementsvg front={frontcount} back={backcount} />
-
-        <div className="header-section">
-          <div className="header">foton.</div>
-
-          <div className="menuicon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
-              <g
-                fill="red"
-                fill-rule="evenodd"
-                stroke="#000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                transform="translate(1 1)"
-              >
-                <path d="M0 6h18M0 0h18M0 12h18" />
-              </g>
-            </svg>
-            {/* <img src={menuicon} className="svgicon" alt="menubar"/> */}
-          </div>
-        </div>
-
-        {/* middle section */}
-        <div className="threepages">
-          <div className="middle-section">
-            <Left front={frontcount} back={backcount} />
-
-            <div className="MiddleContent">
-              <Middle front={frontcount} back={backcount} />
-            </div>
-
-            <div className="thirdmiddlecontent"></div>
-          </div>
-
-          {/* bottom section */}
-
-          <div className="bottom">
-            <Bottom />
-          </div>
-        </div>
-
-        <div className="detailspage" style={basicStyle}>
-          <Details />
-        </div>
+        <Header/>  {/* header ko call kiya */}
+        <Newmiddle front={frontcount} back={backcount}/>  {/* middle section */}
+        <Details />    {/* details vaala */}
+        
       </div>
     </div>
   );

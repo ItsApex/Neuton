@@ -1,10 +1,12 @@
 import React from "react";
 import "./Details.css";
 import Fade from "react-reveal/Fade";
-
+const basicStyle = {
+  display: "none",
+};
 function Details() {
   return (
-    <div className="lastpage">
+    <div   style={basicStyle} className="lastpage">
     <Fade Bottom>
     <div className="details">
         <p id="big-text">Contact us Now <br/> and step into the future</p>

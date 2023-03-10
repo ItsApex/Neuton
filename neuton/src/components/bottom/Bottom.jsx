@@ -9,8 +9,8 @@ import Fade from "react-reveal/Fade";
 function Bottom() {
   return (
     
-         <div className="bottom-section">
-            <Fade top>
+      <div className="bottom-section">
+        <Fade top>
         <div className="boxes">
           I app Store
         </div>
@@ -19,7 +19,7 @@ function Bottom() {
           Google Play
         </div>
         </Fade>
-       </div>
+      </div>
       
   
   )

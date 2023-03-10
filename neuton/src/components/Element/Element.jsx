@@ -24,7 +24,9 @@ function BackEle(props) {
         console.log("2nd for svg")
         
         document.querySelector(".element").style.position ="absolute"
-        document.querySelector(".element").style.top = "0"
+        document.querySelector(".element").style.bottom = "10"
+        document.querySelector(".element").style.removeProperty('top')
+
         document.querySelector(".element").style.transform = "rotate(180deg)"
        
         // document.querySelector(".first").style.display = "none";
@@ -40,7 +42,9 @@ function BackEle(props) {
     
       if(props.front == 10){
         document.querySelector(".element").style.position ="absolute"
-        document.querySelector(".element").style.top= "28%"
+        document.querySelector(".element").style.top= "10"
+        document.querySelector(".element").style.removeProperty('bottom')
+
        
 
         document.querySelector(".element").style.transform = "rotate(360deg)"
@@ -55,10 +59,13 @@ function BackEle(props) {
      else if(props.back == -10){
       // document.querySelector(".second").style.display = "none";
       // document.querySelector(".first").style.display = "block";
-      document.querySelector(".element").style.top = "28%"
+      document.querySelector(".element").style.top = "10"
+      document.querySelector(".element").style.removeProperty('bottom')
+
+
       document.querySelector(".element").style.transform = "rotate(0deg)"
       flgscl = 0
-      console.log("1st for svg")
+      console.log("1st again for svg")
       }
     
       // else if(props.front == 10 ){
@@ -73,8 +80,10 @@ function BackEle(props) {
     
     
      if(props.back == -10){
-      console.log("2nd for svg")
-      document.querySelector(".element").style.top = "0"
+      console.log("2nd again for svg")
+        document.querySelector(".element").style.removeProperty('top')
+
+        document.querySelector(".element").style.bottom = "0"
       document.querySelector(".element").style.transform = "rotate(180deg)"
       // document.querySelector(".second").style.display = "block";
       // document.querySelector(".third").style.display = "none";
@@ -87,8 +96,8 @@ function BackEle(props) {
 
 
   return(
- <img className="element" src={Element} />
-  )
+      <img className="element" src={Element} />
+)
 }
 
 export default BackEle
