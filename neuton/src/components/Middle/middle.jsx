@@ -68,23 +68,7 @@ function Middle(props) {
     <div className="phone">
    
       <div className="outercontainer">   
-      {/* <div className='first'> 
-       <Fade bottom>
-          <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-1.png"/> 
-      </Fade>
-      </div> 
-
-      <div className='second' style={basicStyle}>
-        <Fade bottom> 
-        <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-2.png"/>  
-        </Fade> 
-        </div>
-
-      <div className='third' style={basicStyle}>
-      <Fade right> 
-         <img className="svg"  src="https://foton.qodeinteractive.com/wp-content/uploads/2019/12/screen-3.png"/> 
-      </Fade>
-      </div> */}
+      
       <Phone/>
       </div>
       

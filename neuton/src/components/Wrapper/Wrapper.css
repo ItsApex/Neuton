@@ -103,12 +103,14 @@ svg {
     z-index: 0;
 }
 
-/* 
-@media  screen and (max-width : 600px) {
+
+/* @media  screen and (max-width : 600px) {
     .middle-section{
         display: flex;
         flex-direction: column;
-        /* background-color: red; */
+        
     
+    }
     
+}    */
 

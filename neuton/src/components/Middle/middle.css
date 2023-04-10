@@ -29,3 +29,21 @@
     /* width : 170px; */
     /* position: absolute; */
 }
+
+
+@media  screen and (max-width : 600px) {
+    .outercontainer{
+      height : 250px;
+      margin-top: 60px;
+      /* margin-top : 20px; */
+    }
+    
+}  
+
+@media  screen and (max-width : 400px) {
+    .outercontainer{
+      height : 250px;
+      /* margin-top : 40px; */
+    }
+    
+}  

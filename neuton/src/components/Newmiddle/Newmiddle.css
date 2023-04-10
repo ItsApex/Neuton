@@ -8,7 +8,24 @@
   
 }
 
+.threepages{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .middle-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
+
+@media  screen and (max-width : 600px) {
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    
+    
+}   

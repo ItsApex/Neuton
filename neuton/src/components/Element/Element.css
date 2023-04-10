@@ -1,5 +1,5 @@
 .element{
-    scale: 1.7;
+    scale: 1.2;
     position : absolute;
     top: -550px;
     /* bottom: 0; */
@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 950px){
     .element{
-        scale: 1.5;
+        /* scale: .; */
         top: -250px;
         /* bottom: 0; */
         width : 100%;
@@ -29,6 +29,18 @@
         /* bottom: 0; */
         width : 100%;
         transform-origin: 50% 98%;
+        transition-duration: 1s;
+        transition-timing-function:cubic-bezier(0.99999, 0.2, 0.165,1);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .element{
+        scale: 4.5;
+        top: 170px;
+        /* bottom: 0; */
+        width : 100%;
+        transform-origin: 50% 95%;
         transition-duration: 1s;
         transition-timing-function:cubic-bezier(0.99999, 0.2, 0.165,1);
     }

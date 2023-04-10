@@ -2,12 +2,13 @@ import React from "react";
 import Left from "../Left/Left";
 import Middle from "../Middle/middle";
 import Bottom from "../bottom/Bottom";
+import "../Newmiddle/Newmiddle.css"
 function Newmiddle(props) {
     return (
-        <div>
+      
             <div className="threepages">
                 <div className="middle-section">
-                    <Left front={props.front} back={props.back} />
+                   <div><Left front={props.front} back={props.back} /></div> 
 
                     <div className="MiddleContent">
                         <Middle front={props.front} back={props.back} />
@@ -22,7 +23,7 @@ function Newmiddle(props) {
                     <Bottom />
                 </div>
             </div>
-        </div>
+        
     );
 }
 

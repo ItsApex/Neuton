@@ -25,5 +25,35 @@
 
 .small{
     font-size: 40px;
-  
+}
+
+@media screen and (max-width: 600px){
+    .small{
+        font-size: 30px; 
+    }
+
+    .big{
+        font-size: 30px; 
+    }
+
+    .downcontent{
+        font-size: 30px; 
+       
+    }
+
+    .Main-Text{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .lower{
+        margin-top:270px
+    }
+
+    .upper{
+        margin-bottom: 200px;
+    }
 }

@@ -77,15 +77,19 @@ useEffect(() => {
   return (
     <>
 
-      <div className="Main-Text ">
+      <div className="Main-Text">
 
 
       <div className='one' >
         <Fade left>
           <div className="middlecontent">
+            <div className="uppper">
             <div className="big">Centralized Apps</div>
             <div className="small">First content</div>
-            <div className="downcontent"> 01 Protecting the Data</div>
+            </div>
+            <div className="lower">
+           <div className="downcontent"> 01 Protecting the Data</div>
+           </div> 
           </div>
         </Fade>
       </div>
@@ -93,9 +97,13 @@ useEffect(() => {
       <div className='two' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
+          <div className="uppper">
             <div className="big"> Top Notch Features</div>
             <div className="small">Second content</div>
+            </div>
+            <div className="lower">
             <div className="downcontent"> 02 Market Analysis</div>
+            </div>
           </div>
         </Fade>
       </div>
@@ -103,8 +111,12 @@ useEffect(() => {
       <div className='three' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
+          <div className="uppper">
             <div className="big"> Web Solution</div>
+            </div>
+            <div className="lower">
             <div className="small"> 03 Managing Asset</div>
+            </div>  
           </div>
         </Fade>
       </div>
@@ -112,8 +124,12 @@ useEffect(() => {
       <div className='four' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
+            <div className="upper">
             <div className="big"> Coupons</div>
-            <div className="small"> 04 Get Exciting coupons </div>
+            </div>
+          <div className="lower">
+          <div className="small"> 04 Get Exciting coupons </div>
+          </div>  
           </div>
         </Fade>
       </div>
