@@ -10,13 +10,21 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.big{
+    margin: 20px 0 20px 0 ;
+}
+
+
 .LeftContent{
     width: 33.3%;
 }
 
 .middlecontent{
-    font-size: 30px;
-    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;    
 }
 
 .downcontent{

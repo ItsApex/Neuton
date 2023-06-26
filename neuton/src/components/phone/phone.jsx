@@ -4,10 +4,9 @@ import React,{ useEffect } from "react";
 import Fade from "react-reveal/Fade";
 //images import
 import Home from '../Assets/Home.png';
-import Investment from '../Assets/Quickcash.png';
-import Quickcash from '../Assets/Quickcash.png';
+import Investment from '../Assets/Investment.png';
 import Coupons from '../Assets/Coupons.png';
-import Tos from '../Assets/TOS.png';
+import thirdpage from '../Assets/thirdpage.png'
 
 var flgscl = 0  
 function Phone(props) {
@@ -89,7 +88,7 @@ function Phone(props) {
 
       <div className='third' style={basicStyle}>
       <Fade left> 
-         <img className="svg"  src={Quickcash} /> 
+         <img className="svg"  src={thirdpage} /> 
       </Fade>
       </div>
 
@@ -99,11 +98,11 @@ function Phone(props) {
       </Fade>
       </div>
 
-      <div className='five' style={basicStyle}>
+      {/* <div className='five' style={basicStyle}>
       <Fade left> 
          <img className="svg"  src={Tos} /> 
       </Fade>
-      </div>
+      </div> */}
 
       {/* </div> */}
    

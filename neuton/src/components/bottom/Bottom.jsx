@@ -19,12 +19,12 @@ function Bottom() {
     
       <div className="bottom-section">
         <Fade top>
-        <div className="boxes" style={{color: "purple" , borderColor:"purple"}}>
+        <div className="boxes" style={{color: "purple" , borderColor:"white"}}>
           <img className="logo" src={Apple}  />
           I app Store
         </div>
 
-        <div className="boxes" style={{color: "red" , borderColor:"red"}}>
+        <div className="boxes" style={{color: "red" , borderColor:"white"}}>
         <img className="logo" src={Google} />
           Google Play
         </div>

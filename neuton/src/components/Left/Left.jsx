@@ -7,51 +7,35 @@ import Details from "../Details/Details";
 var flgscl = 0   
 
 function Left(props) {
-  // console.log("back", props.back , "front", props.front)
     const basicStyle = {
         display: "none",
       };
 
-// console.log(flgscl , "flagSCL")
-
 useEffect(() => {
 
   if(flgscl == 0 ){
-    // console.log("1st called")
     if(props.front == 10){
       document.querySelector(".two").style.display = "block";
       document.querySelector(".one").style.display = "none";
       
       flgscl = 10
-      // console.log("1st PROS FRONT = 10 called ")
    }
   } 
   
   else if (flgscl == 10){
-    // console.log("2nd called")
-   
-  
     if(props.front == 10){
       document.querySelector(".two").style.display = "none";
       document.querySelector(".three").style.display = "block";
       flgscl = 20
-    // console.log("2nd PROS FRONT = 10 called ")
-      
    }
     
    else if(props.back == -10){
     document.querySelector(".two").style.display = "none";
     document.querySelector(".one").style.display = "block";
     flgscl = 0
-    // console.log("2nd PROS FRONT = -10 called ")
     
     }
   
-    // else if(props.front == 10 ){
-    //   document.querySelector(".two").style.display = "none";
-    //   document.querySelector(".three").style.display = "block";
-     
-    // }
   }
   
   
@@ -83,13 +67,11 @@ useEffect(() => {
       <div className='one' >
         <Fade left>
           <div className="middlecontent">
-            <div className="uppper">
-            <div className="big">Centralized Apps</div>
-            <div className="small">First content</div>
-            </div>
-            <div className="lower">
-           <div className="downcontent"> 01 Protecting the Data</div>
-           </div> 
+           
+            <div className="big">The savings account that can keep up with your demands</div>
+            <div className="big">Tokens,Gems and Levels to keep you motivated</div>
+           <div className="big">Portfolio clarity to keep your wealth</div>
+          
           </div>
         </Fade>
       </div>
@@ -97,13 +79,8 @@ useEffect(() => {
       <div className='two' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
-          <div className="uppper">
-            <div className="big"> Top Notch Features</div>
-            <div className="small">Second content</div>
-            </div>
-            <div className="lower">
-            <div className="downcontent"> 02 Market Analysis</div>
-            </div>
+            <div className="big"> Curated investment options to choose to build the perfect portfolio</div>
+            <div className="big">SAFE,SIMPLE & EASY. Grow your wealth with the right assets </div>
           </div>
         </Fade>
       </div>
@@ -111,12 +88,10 @@ useEffect(() => {
       <div className='three' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
-          <div className="uppper">
-            <div className="big"> Web Solution</div>
-            </div>
-            <div className="lower">
-            <div className="small"> 03 Managing Asset</div>
-            </div>  
+         
+            <div className="big">Create chests to fulfill your dreams with speed and ease</div>
+            <div className="big">Invest in model portfolios according to your goal's tenure</div>
+          
           </div>
         </Fade>
       </div>
