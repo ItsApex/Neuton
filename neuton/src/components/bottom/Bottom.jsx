@@ -21,7 +21,7 @@ function Bottom() {
         <Fade top>
         <div className="boxes" style={{color: "purple" , borderColor:"white"}}>
           <img className="logo" src={Apple}  />
-          I app Store
+          App Store
         </div>
 
         <div className="boxes" style={{color: "red" , borderColor:"white"}}>

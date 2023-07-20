@@ -36,7 +36,7 @@ useEffect(() => {
   useEffect(() => {
 
     if(flgscl == 0 ){
-      console.log("1st called for phone")
+      // console.log("1st called for phone")
     //   if(props.front == 10){
     //     // image.style.position = "absolute";
     //     image.style.bottom = "0";
@@ -50,7 +50,7 @@ useEffect(() => {
     } 
     
     else if (flgscl == 10){
-      console.log("2nd called for phone")
+      // console.log("2nd called for phone")
      
     
       if(props.front == 10){
@@ -78,7 +78,7 @@ useEffect(() => {
     
     
     else if (flgscl == 20){
-      console.log("3rd called for phone")
+      // console.log("3rd called for phone")
     
     
      if(props.back == -10){

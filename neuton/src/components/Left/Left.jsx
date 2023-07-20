@@ -42,7 +42,11 @@ useEffect(() => {
   else if (flgscl == 20){
     // console.log("3rd called")
   
-  
+    if(props.front == 10){
+      document.querySelector(".three").style.display = "none";
+      document.querySelector(".four").style.display = "block";
+      flgscl = 30
+   }
    if(props.back == -10){
     document.querySelector(".two").style.display = "block";
     document.querySelector(".three").style.display = "none";
@@ -50,7 +54,15 @@ useEffect(() => {
    }
   // console.log(props.front)
   }
-  
+  else if (flgscl == 30){
+    // console.log("3rd called")
+   if(props.back == -10){
+    document.querySelector(".three").style.display = "block";
+    document.querySelector(".four").style.display = "none";
+    flgscl = 20
+   }
+  // console.log(props.front)
+  }
 
 
 },[props.back , props.front])
@@ -100,10 +112,10 @@ useEffect(() => {
         <Fade left>
           <div className="middlecontent">
             <div className="upper">
-            <div className="big"> Coupons</div>
+            <div className="big">1.	Quick-Cash for emergencies and building your credit score. Provided by RBI-regulated NBFC only.</div>
             </div>
           <div className="lower">
-          <div className="small"> 04 Get Exciting coupons </div>
+          <div className="big"> 2. Reach out to us for any personal loan, gold loan or insurance needs. We work with more than 50+ partners to get you the best deal possible. Reach out to us at loans@justmny.in. </div>
           </div>  
           </div>
         </Fade>

@@ -3,7 +3,6 @@ import "./Wrapper.css";
 import React, { useState } from "react";         
 import Details from "../Details/Details";
 import Elementsvg from "../Element/Element";
-// new
 import Header from "../Newheader/Header";
 import Newmiddle from "../Newmiddle/Newmiddle";
 
@@ -17,38 +16,40 @@ function App() {
   const [isRotated, setIsRotated] = useState(false);
   const [isBottom, setIsBottom] = useState(false);
 
+
+  // hooks
   useEffect(() => {
     const handleWheel = (event) => {
       setIsRotated(!isRotated);
       setIsBottom(!isBottom);
     };
 
-    window.addEventListener("wheel", handleWheel);
+    window.addEventListener("wheel", handleWheel);              
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
     };
-  }, [isRotated, isBottom]);
-  // Animation vaala part khatam
+  }, [isRotated, isBottom]);   //useEffect closed
+  
 
   const [frontcount, setFrontcount] = useState(0);
   const [backcount, setBackcount] = useState(0);
-  // const[data,setdata] =useState("helllllo")
   function scroll(wheel) {
     // console.log("wheel value is",wheel.deltaY);
 
     if (wheel.deltaY >= 90) {
-      console.log(`wheel count is ${wheel.deltaY}`)
-      if (frontcount == 30) {
+      // console.log(`wheel count is ${wheel.deltaY}`)
+      if (frontcount == 50) {
         //small changes made here..change to 30
         setFrontcount(0);
         setBackcount(0);
         // console.log("Front");
       } else {
         setFrontcount(frontcount + 5);
+        // console.log("value of the front count is",frontcount)
       }
     } else if (wheel.deltaY <= 90) {
-      if (backcount == -30) {
+      if (backcount == -50) {
         setFrontcount(0);
         setBackcount(0);
 
