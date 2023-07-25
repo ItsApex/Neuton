@@ -67,10 +67,67 @@ function Phone(props) {
   //   }
   // }, [props.back, props.front , flgscl]);
 
+
+  // useEffect(() => {
+
+  //   if(flgscl == 0 ){
+  //     if(props.front == 10){
+  //       document.querySelector(".two").style.display = "block";
+  //       document.querySelector(".one").style.display = "none";
+        
+  //       flgscl = 10
+  //    }
+  //   } 
+    
+  //   else if (flgscl == 10){
+  //     if(props.front == 10){
+  //       document.querySelector(".two").style.display = "none";
+  //       document.querySelector(".three").style.display = "block";
+  //       flgscl = 20
+  //    }
+      
+  //    else if(props.back == -10){
+  //     document.querySelector(".two").style.display = "none";
+  //     document.querySelector(".one").style.display = "block";
+  //     flgscl = 0
+      
+  //     }
+    
+  //   }
+    
+    
+  //   else if (flgscl == 20){
+  //     // console.log("3rd called")
+    
+  //     if(props.front == 10){
+  //       document.querySelector(".three").style.display = "none";
+  //       document.querySelector(".four").style.display = "block";
+  //       flgscl = 30
+  //    }
+  //    if(props.back == -10){
+  //     document.querySelector(".two").style.display = "block";
+  //     document.querySelector(".three").style.display = "none";
+  //     flgscl = 10
+  //    }
+  //   // console.log(props.front)
+  //   }
+  //   else if (flgscl == 30){
+  //     // console.log("3rd called")
+  //    if(props.back == -10){
+  //     document.querySelector(".three").style.display = "block";
+  //     document.querySelector(".four").style.display = "none";
+  //     flgscl = 20
+  //    }
+  //   // console.log(props.front)
+  //   }
+  
+  
+  // },[props.back , props.front])
+
   return (
     <div className="phone" style={{ overflow: "hidden" }}>
       {/* <div className="outercontainer">   */}
-      <div className="first">
+      <div className="first" >
         <Fade left>
           <img className="svg" src={Home} />
         </Fade>

@@ -121,15 +121,6 @@ useEffect(() => {
         </Fade>
       </div>
 
-      <div className='five' style={basicStyle}>
-        <Fade left>
-          <div className="middlecontent">
-            <div className="big">TOS</div>
-            <div className="small"> 05 End of the display </div>
-          </div>
-        </Fade>
-      </div>
-
       
       </div>
 
