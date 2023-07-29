@@ -46,7 +46,7 @@ justify-content: center;
 }
 
 .join:hover{
-    background-color: #e67de7;
+    background-color: #66b3f1;
     transition: 1s;
     color: rgb(255, 255, 255);
     border : none;

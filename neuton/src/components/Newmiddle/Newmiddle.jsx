@@ -10,11 +10,11 @@ function Newmiddle(props) {
             <div className="threepages">
                 <div className="middle-section">
                    <div>
-                    <Left front={props.front} back={props.back} />
+                    <Left front={props.front} back={props.back} stop={props.stop} />
                     </div> 
 
                     <div className="MiddleContent">
-                        <Middle front={props.front} back={props.back} />
+                        <Middle front={props.front} back={props.back} stop={props.stop} />
                         {/* <Phone front={props.front} back={props.back} /> */}
                     </div>
 

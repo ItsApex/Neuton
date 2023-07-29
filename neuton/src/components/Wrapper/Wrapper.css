@@ -17,13 +17,14 @@ width : 100%;
     position : absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     
-    background-image: linear-gradient(90deg, #00DBDE 0%, #fd6bff 100%);
+    background-image: linear-gradient(90deg, #4E4FEB 0%, #068FFF 100%);
     overflow: hidden;
     
    
 }
 
 .wrapper-inner{
+    scroll-snap-stop: always;
     position: relative;
     z-index: 1;
     height: 100%;

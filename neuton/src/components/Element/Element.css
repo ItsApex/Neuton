@@ -1,7 +1,8 @@
 .element{
     scale: 1.2;
     position : absolute;
-    top: -550px;
+
+    top: -550px; scroll-snap-stop: always;
     /* bottom: 0; */
     width : 100%;
     transform-origin: 50% 98%;

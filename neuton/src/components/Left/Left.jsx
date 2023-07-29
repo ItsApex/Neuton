@@ -12,9 +12,13 @@ function Left(props) {
       };
 
 useEffect(() => {
+  const first = document.querySelector('.one')
+  const second = document.querySelector('.two')
+  const third = document.querySelector('.third')
+  const fourth = document.querySelector('.four')
 
   if(flgscl == 0 ){
-    if(props.front == 10){
+    if(props.front == 10 ){
       document.querySelector(".two").style.display = "block";
       document.querySelector(".one").style.display = "none";
       
@@ -111,12 +115,10 @@ useEffect(() => {
       <div className='four' style={basicStyle}>
         <Fade left>
           <div className="middlecontent">
-            <div className="upper">
+           
             <div className="big">1.	Quick-Cash for emergencies and building your credit score. Provided by RBI-regulated NBFC only.</div>
-            </div>
-          <div className="lower">
           <div className="big"> 2. Reach out to us for any personal loan, gold loan or insurance needs. We work with more than 50+ partners to get you the best deal possible. Reach out to us at loans@justmny.in. </div>
-          </div>  
+      
           </div>
         </Fade>
       </div>

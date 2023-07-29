@@ -4,7 +4,7 @@ function Header() {
   return (
     <div>
          <div className="header-section">
-          <div className="header" style={{color:'white'}}>GigaDes.</div>
+          <div className="header" style={{color:'white'}}>JustMny.</div>
     
           <div className="buttonDiv">
             <button className="join">Join</button>

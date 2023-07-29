@@ -70,7 +70,6 @@ function Middle(props) {
         document.querySelector(".second").style.display = "block";
         document.querySelector(".first").style.display = "none";
         
-        
         flgscl = 10
      }
     } 
