@@ -14,7 +14,7 @@ function Newmiddle(props) {
                     </div> 
 
                     <div className="MiddleContent">
-                        <Middle front={props.front} back={props.back} stop={props.stop} />
+                        <Middle front={props.front} back={props.back} stop={props.stop} pageCount={props.pageCount} />
                         {/* <Phone front={props.front} back={props.back} /> */}
                     </div>
 
